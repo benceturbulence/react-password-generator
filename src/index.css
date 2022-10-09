@@ -10,6 +10,11 @@
   position: relative;
 }
 
+  h1 {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+
 .componentContainer{
   width: 80%;
   max-width: 560px;
