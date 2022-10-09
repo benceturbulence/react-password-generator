@@ -1,13 +1,166 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
 }
+
+.componentContainer{
+  width: 80%;
+  max-width: 560px;
+  margin: 0 auto
+}    
+.generateBtn {
+  display: block;
+  background-color: #10B981;
+  color: #ffff;
+  padding: .5rem .5rem;
+  border: none;
+  border-radius: .5rem;
+  margin: 2rem 0 2rem;
+}
+
+.accent {
+  color: #4ADF86
+}
+
+.top {
+  border-bottom: 1px solid transparent;
+  margin-bottom: 2rem
+}
+
+.passwordContainer {
+  display: grid;
+  gap: .7rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));;
+}
+
+.passwordBox {
+  background-color: #273549;
+  justify-self: stretch;
+  padding: .5rem;
+  text-align: center;
+  border-radius: .3rem;
+  min-height: 2.2rem;
+}
+
+/* Light */
+
+.light {
+  background-color: #ECFDF5
+}
+
+.light .top {
+  border-bottom: 1px solid #D5D4D8;
+
+}
+
+
+.formContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 1rem;
+}
+
+#lengthInput {
+  grid-column: 1 / -1;
+}
+
+#lengthInput input {
+  margin-left: .5rem
+}
+
+input {
+  margin-right: .2rem
+}
+
+.formContainer label {
+  display: block;
+  
+}
+/* Dark */
+
+.dark {
+  background-color: #1C1C1C
+}
+
+.dark h1 {
+  color: #ECFDF5
+}
+
+.dark .top {
+  border-color: #2F3E53
+}
+
+.dark label {
+  color: #ECFDF5
+}
+
+/* Position toggle */
+
+.toggleMode {
+  position: absolute;
+  top:10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+  justify-content: flex-end
+}
+
+.light toggler-slider {
+  background-color: black
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+}
+
+.light .toggler--slider--circle {
+  background-color: white;
+}
+.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.dark .toggler--text {
+  color: white
+}
+
+.light .toggler--text {
+  color: #2B283A;
+}
+
+
+
